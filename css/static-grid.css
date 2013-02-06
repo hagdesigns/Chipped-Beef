@@ -1,0 +1,115 @@
+/*
+ _     _                _____             _                  
+| |   | |              (____ \           (_)                 
+| |__ | | ____  ____    _   \ \ ____  ___ _  ____ ____   ___ 
+|  __)| |/ _  |/ _  |  | |   | / _  )/___) |/ _  |  _ \ /___)
+| |   | ( ( | ( ( | |  | |__/ ( (/ /|___ | ( ( | | | | |___ | 
+|_|   |_|\_||_|\_|| |  |_____/ \____|___/|_|\_|| |_| |_(___/ 
+              (_____|                      (_____|
+
+===================
+MODULAR STATIC GRID (Based on Skeleton Grid System)
+===================
+VERSION: 1.0
+============
+
+Part of an effort to create a modular, lightweight CSS framework.
+
+*/
+/* 
+FLUID TWELVE COLUMN GRID TO 1600PX
+================================================== 
+*/
+.container {
+  position: relative;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0;
+  width: 80%;
+}
+.container .column,
+.container .columns {
+  float: left;
+  display: inline;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+/* Nested Column Classes */
+.column.alpha,
+.columns.alpha {
+  margin-left: 0;
+}
+.column.omega,
+.columns.omega {
+  margin-right: 0;
+}
+/* Base Grid */
+.container .one-third {
+  width: 25%;
+}
+.container .two-thirds {
+  width: 65%;
+}
+.container .half {
+  width: 45%;
+}
+/* 
+MOBILE (PORTRAIT) GRID
+================================================== 
+*/
+@media only screen and (max-width: 479px) {
+  .container {
+    width: 300px;
+  }
+  .container .columns,
+  .container .column {
+    margin: 0;
+  }
+  .container .one-third,
+  .container .two-thirds,
+  .container .half {
+    width: 300px;
+  }
+}
+/*
+CLEARING FROM SKELETON GRID SYSTEM
+================================================== 
+*/
+/* Self Clearing Goodness */
+.container:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+/* Use clearfix class on parent to clear nested columns,
+    or wrap each row of columns in a <div class="row"> */
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.row:after,
+.clearfix:after {
+  clear: both;
+}
+.row,
+.clearfix {
+  zoom: 1;
+}
+/* You can also use a <br class="clear" /> to clear columns */
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}

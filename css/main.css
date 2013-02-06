@@ -1,0 +1,213 @@
+@import "normalize.css";
+/*
+ _     _                _____             _                  
+| |   | |              (____ \           (_)                 
+| |__ | | ____  ____    _   \ \ ____  ___ _  ____ ____   ___ 
+|  __)| |/ _  |/ _  |  | |   | / _  )/___) |/ _  |  _ \ /___)
+| |   | ( ( | ( ( | |  | |__/ ( (/ /|___ | ( ( | | | | |___ | 
+|_|   |_|\_||_|\_|| |  |_____/ \____|___/|_|\_|| |_| |_(___/ 
+              (_____|                      (_____|
+
+=============
+MAIN CSS FILE
+=============
+VERSION: 1.0
+============
+
+Part of an effort to create a modular, lightweight CSS framework.
+
+Title:
+Website CSS Version:
+Website URL:
+
+*/
+/*
+LESS VARIABLES
+=========
+ */
+/*
+SELECTED MODULES
+================
+*/
+/*
+ _     _                _____             _                  
+| |   | |              (____ \           (_)                 
+| |__ | | ____  ____    _   \ \ ____  ___ _  ____ ____   ___ 
+|  __)| |/ _  |/ _  |  | |   | / _  )/___) |/ _  |  _ \ /___)
+| |   | ( ( | ( ( | |  | |__/ ( (/ /|___ | ( ( | | | | |___ | 
+|_|   |_|\_||_|\_|| |  |_____/ \____|___/|_|\_|| |_| |_(___/ 
+              (_____|                      (_____|
+
+==================
+MODULAR FLUID GRID (Based on Skeleton Grid System)
+==================
+VERSION: 1.0
+============
+
+Part of an effort to create a modular, lightweight CSS framework.
+
+*/
+/* 
+FLUID TWELVE COLUMN GRID
+================================================== 
+*/
+.container {
+  position: relative;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0;
+  width: 80%;
+}
+.container .column,
+.container .columns {
+  float: left;
+  display: inline;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+/* Nested Column Classes */
+.column.alpha,
+.columns.alpha {
+  margin-left: 0;
+}
+.column.omega,
+.columns.omega {
+  margin-right: 0;
+}
+/* Base Grid */
+.container .one-third {
+  width: 25%;
+}
+.container .two-thirds {
+  width: 65%;
+}
+.container .half {
+  width: 45%;
+}
+/* 
+MOBILE (PORTRAIT) GRID
+================================================== 
+*/
+@media only screen and (max-width: 479px) {
+  .container {
+    width: 300px;
+  }
+  .container .columns,
+  .container .column {
+    margin: 0;
+  }
+  .container .one-third,
+  .container .two-thirds,
+  .container .half {
+    width: 300px;
+  }
+}
+/*
+CLEARING FROM SKELETON GRID SYSTEM
+================================================== 
+*/
+/* Self Clearing Goodness */
+.container:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+/* Use clearfix class on parent to clear nested columns,
+    or wrap each row of columns in a <div class="row"> */
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.row:after,
+.clearfix:after {
+  clear: both;
+}
+.row,
+.clearfix {
+  zoom: 1;
+}
+/* You can also use a <br class="clear" /> to clear columns */
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+/*
+ _     _                _____             _                  
+| |   | |              (____ \           (_)                 
+| |__ | | ____  ____    _   \ \ ____  ___ _  ____ ____   ___ 
+|  __)| |/ _  |/ _  |  | |   | / _  )/___) |/ _  |  _ \ /___)
+| |   | ( ( | ( ( | |  | |__/ ( (/ /|___ | ( ( | | | | |___ | 
+|_|   |_|\_||_|\_|| |  |_____/ \____|___/|_|\_|| |_| |_(___/ 
+              (_____|                      (_____|
+
+===============
+MODULAR TYPE
+===============
+VERSION: 1.0
+============
+
+Part of an effort to create a modular, lightweight CSS framework.
+
+*/
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "garamond-premier-pro-display", serif;
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+}
+h1 {
+  font-family: "adelle", serif;
+  font-size: 11rem;
+  line-height: 10.5rem;
+  margin-top: 3.5rem;
+}
+h2 {
+  font-family: "adelle", serif;
+  font-size: 7rem;
+  line-height: 10.5rem;
+  margin-top: 10.5rem;
+  margin-bottom: 3.5rem;
+}
+h3 {
+  font-family: "adelle", serif;
+  font-size: 4rem;
+  line-height: 7rem;
+  margin-top: 7rem;
+  margin-bottom: 3.5rem;
+}
+h4 {
+  font-family: "adelle", serif;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  margin-top: 3.5rem;
+  margin-bottom: 0rem;
+}
+p,
+ul {
+  margin-top: 0rem;
+  margin-bottom: 3.5rem;
+}
+small,
+aside {
+  font-size: 2rem;
+}
+@media only screen and (max-width: 479px) {
+  html {
+    font-size: 45%;
+  }
+}

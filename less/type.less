@@ -1,0 +1,83 @@
+/*
+ _     _                _____             _                  
+| |   | |              (____ \           (_)                 
+| |__ | | ____  ____    _   \ \ ____  ___ _  ____ ____   ___ 
+|  __)| |/ _  |/ _  |  | |   | / _  )/___) |/ _  |  _ \ /___)
+| |   | ( ( | ( ( | |  | |__/ ( (/ /|___ | ( ( | | | | |___ | 
+|_|   |_|\_||_|\_|| |  |_____/ \____|___/|_|\_|| |_| |_(___/ 
+              (_____|                      (_____|
+
+===============
+MODULAR TYPE
+===============
+VERSION: 1.0
+============
+
+Part of an effort to create a modular, lightweight CSS framework.
+
+*/
+
+// Font Families
+@headerFontFamily: "adelle",serif;
+@bodyFontFamily: "garamond-premier-pro-display", serif;
+
+// Type Scale
+@ratio: 1.618; //Default is golden ratio: 1.618
+@baseFontSize: 2.5rem;
+@lineHeight: 3.5rem; //Should be >= to @baseFontSize
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: @bodyFontFamily;
+    font-size: @baseFontSize;
+    line-height: @lineHeight;
+}
+
+h1 {
+    font-family: @headerFontFamily;
+    font-size: round(@baseFontSize*@ratio*@ratio*@ratio);
+    line-height: @lineHeight*3;
+    margin-top: @lineHeight;
+    // margin-bottom: @lineHeight*3;
+}
+
+h2 {
+    font-family: @headerFontFamily;
+    font-size: round(@baseFontSize*@ratio*@ratio);
+    line-height: @lineHeight*3;
+    margin-top: @lineHeight*3;
+    margin-bottom: @lineHeight;
+}
+
+h3 {
+    font-family: @headerFontFamily;
+    font-size: round(@baseFontSize*@ratio);
+    line-height: @lineHeight*2;
+    margin-top: @lineHeight*2;
+    margin-bottom: @lineHeight;
+}
+
+h4 {
+    font-family: @headerFontFamily;
+    font-size: round(@baseFontSize);
+    line-height: @lineHeight;
+    margin-top: @lineHeight;
+    margin-bottom: 0rem;
+}
+
+p, ul {
+    margin-top: 0rem;
+    margin-bottom: @lineHeight;
+}
+
+small, aside {
+    font-size: round(@baseFontSize/@ratio);
+}
+
+
+@media only screen and (max-width: 479px) {
+    html { font-size: 45%;}
+}
