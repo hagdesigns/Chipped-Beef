@@ -22,6 +22,11 @@ VERSION: 1.0
 * Designed and built with all the love in the world @twitter by @mdo and @fat.
 
 */
+
+//Config
+@fluidContainerMaxWidth: 1600px;
+@fluidContainerGutter: 20px;
+
 .clearfix {
   *zoom: 1;
 }
@@ -342,8 +347,9 @@ VERSION: 1.0
   clear: both;
 }
 .container-fluid {
-  padding-right: 20px;
-  padding-left: 20px;
+  max-width: @fluidContainerMaxWidth;
+  padding: 0 @fluidContainerGutter;
+  margin: 0 auto;
   *zoom: 1;
 }
 .container-fluid:before,
