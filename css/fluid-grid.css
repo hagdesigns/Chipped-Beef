@@ -27,30 +27,38 @@ FLUID TWELVE COLUMN GRID
   padding: 0;
   width: 80%;
 }
-.container .column,
-.container .columns {
+.row-fluid {
+  width: 100%;
+}
+.row-fluid:after {
+  clear: both;
+}
+.row-fluid::before,
+.row-fluid::after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+.row-fluid [class*="grid"] {
   float: left;
   display: inline;
   margin-left: 5%;
-  margin-right: 5%;
 }
 /* Nested Column Classes */
-.column.alpha,
-.columns.alpha {
+.row-fluid [class*="grid"]:first-child {
   margin-left: 0;
 }
-.column.omega,
-.columns.omega {
+.row-fluid [class*="grid"]:last-child {
   margin-right: 0;
 }
 /* Base Grid */
-.container .one-third {
+.row-fluid .grid-one-third {
   width: 25%;
 }
-.container .two-thirds {
+.row-fluid .grid-two-thirds {
   width: 65%;
 }
-.container .half {
+.row-fluid .half {
   width: 45%;
 }
 /* 
