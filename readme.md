@@ -2,6 +2,12 @@
 
 This framework is nowhere near done! I'm adding to it as I go, and is not anywhere near a usable state.
 
+## Latest Revisions
+
+As of July 2nd, 2013
+- Rewrote much of the grid module. Now both the fluid AND fixed grids support LESS! Yay! It's now much easier to changed fixed grid sizes and adapt the grid to fit in padded containers.
+- Tidied up some things!
+
 ## Usage
 
 There are two folders. One for the uncompiled LESS and another for final CSS. Edit the LESS files to customize the framework and change variables. While you can use the LESS files directly in the browser, best practices suggest that you first compile the LESS into vanilla CSS.
