@@ -525,40 +525,40 @@ VERSION: 1.0
   width: 60px;
 }
 .offset12 {
-  margin-left: 980px;
+  width: 940px;
 }
 .offset11 {
-  margin-left: 900px;
+  width: 860px;
 }
 .offset10 {
-  margin-left: 820px;
+  width: 780px;
 }
 .offset9 {
-  margin-left: 740px;
+  width: 700px;
 }
 .offset8 {
-  margin-left: 660px;
+  width: 620px;
 }
 .offset7 {
-  margin-left: 580px;
+  width: 540px;
 }
 .offset6 {
-  margin-left: 500px;
+  width: 460px;
 }
 .offset5 {
-  margin-left: 420px;
+  width: 380px;
 }
 .offset4 {
-  margin-left: 340px;
+  width: 300px;
 }
 .offset3 {
-  margin-left: 260px;
+  width: 220px;
 }
 .offset2 {
-  margin-left: 180px;
+  width: 140px;
 }
 .offset1 {
-  margin-left: 100px;
+  width: 60px;
 }
 .row-fluid {
   width: 100%;
@@ -965,7 +965,6 @@ VERSION: 1.0
 }
 @media (min-width: 768px) and (max-width: 979px) {
   .row {
-    margin-left: -20px;
     *zoom: 1;
   }
   .row:before,
@@ -986,7 +985,7 @@ VERSION: 1.0
   .navbar-static-top .container,
   .navbar-fixed-top .container,
   .navbar-fixed-bottom .container {
-    width: 724px;
+    width: 744px;
   }
   .span12 {
     width: 724px;
@@ -1305,7 +1304,7 @@ VERSION: 1.0
 }
 @media (min-width: 1200px) {
   .row {
-    margin-left: -30px;
+    margin-left: -20px;
     *zoom: 1;
   }
   .row:before,
@@ -1320,49 +1319,49 @@ VERSION: 1.0
   [class*="span"] {
     float: left;
     min-height: 1px;
-    margin-left: 30px;
+    margin-left: 20px;
   }
   .container,
   .navbar-static-top .container,
   .navbar-fixed-top .container,
   .navbar-fixed-bottom .container {
-    width: 1170px;
+    width: 940px;
   }
   .span12 {
-    width: 1170px;
+    width: 940px;
   }
   .span11 {
-    width: 1070px;
+    width: 860px;
   }
   .span10 {
-    width: 970px;
+    width: 780px;
   }
   .span9 {
-    width: 870px;
+    width: 700px;
   }
   .span8 {
-    width: 770px;
+    width: 620px;
   }
   .span7 {
-    width: 670px;
+    width: 540px;
   }
   .span6 {
-    width: 570px;
+    width: 460px;
   }
   .span5 {
-    width: 470px;
+    width: 380px;
   }
   .span4 {
-    width: 370px;
+    width: 300px;
   }
   .span3 {
-    width: 270px;
+    width: 220px;
   }
   .span2 {
-    width: 170px;
+    width: 140px;
   }
   .span1 {
-    width: 70px;
+    width: 60px;
   }
   .offset12 {
     margin-left: 1230px;
@@ -1732,3 +1731,7 @@ KEEPING IT RESPONSIVE, YO
 YOUR STYLES GO RIGHT HURR -- BELOW THIS LINE
 =========================
 */
+body {
+  background: #ffffff;
+  color: #000000;
+}

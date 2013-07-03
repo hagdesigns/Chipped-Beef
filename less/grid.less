@@ -23,9 +23,49 @@ VERSION: 1.0
 
 */
 
-//Config
-@fluidContainerMaxWidth: 1600px;
-@fluidContainerGutter: 20px;
+//FLUID GRID CONFIGURATION
+//=========
+
+@fluidContainerMaxWidth:  1600px;
+@fluidContainerGutter:    20px;
+
+
+//FIXED GRID CONFIGURATION
+//=========
+
+//Set container width for largest grid size
+@gridContainerWidth:  960px; //Actual value with will be (THIS - gridGutterWidth) Ex if this is 960, and gutter is 20px, final will be 940px.
+@gridGutterWidth:     20px;
+@gridColumns:         12;
+
+
+//DON'T EDIT BELOW THIS LINE
+
+//Determine base column size and final container size
+@gridColumnWidth: (@gridContainerWidth - (@gridColumns * @gridGutterWidth))/@gridColumns;
+@containerWidth: @gridContainerWidth - @gridGutterWidth;
+
+// // 1200px min
+// @gridColumnWidth1200:     70px;
+// @gridGutterWidth1200:     20px;
+// @gridRowWidth1200:        (@gridColumns * @gridColumnWidth1200) + (@gridGutterWidth1200 * @gridColumns);
+
+// 768px-979px
+@gridColumnWidth768:      42px;
+@gridGutterWidth768:      20px;
+@gridRowWidth768:         (@gridColumns * @gridColumnWidth768) + (@gridGutterWidth768 * @gridColumns);
+
+.theWidth (@theColumn: 1) {
+  width: (@gridColumnWidth * @theColumn) + (@gridGutterWidth * (@theColumn - 1));
+}
+
+.theWidth1200 (@theColumn: 1) {
+  width: (@gridColumnWidth * @theColumn) + (@gridGutterWidth * (@theColumn - 1));
+}
+
+.theWidth768 (@theColumn: 1) {
+  width: (@gridColumnWidth768 * @theColumn) + (@gridGutterWidth768 * (@theColumn - 1));
+}
 
 .clearfix {
   *zoom: 1;
@@ -55,7 +95,7 @@ VERSION: 1.0
   box-sizing: border-box;
 }
 .row {
-  margin-left: -20px;
+  margin-left: -@gridGutterWidth;
   *zoom: 1;
 }
 .row:before,
@@ -70,85 +110,86 @@ VERSION: 1.0
 [class*="span"] {
   float: left;
   min-height: 1px;
-  margin-left: 20px;
+  margin-left: @gridGutterWidth;
 }
+
 .container,
 .navbar-static-top .container,
 .navbar-fixed-top .container,
 .navbar-fixed-bottom .container {
-  width: 940px;
+  width: @containerWidth;
 }
 .span12 {
-  width: 940px;
+  .theWidth(12);
 }
 .span11 {
-  width: 860px;
+  .theWidth(11);
 }
 .span10 {
-  width: 780px;
+  .theWidth(10);
 }
 .span9 {
-  width: 700px;
+  .theWidth(9);
 }
 .span8 {
-  width: 620px;
+  .theWidth(8);
 }
 .span7 {
-  width: 540px;
+  .theWidth(7);
 }
 .span6 {
-  width: 460px;
+  .theWidth(6);
 }
 .span5 {
-  width: 380px;
+  .theWidth(5);
 }
 .span4 {
-  width: 300px;
+  .theWidth(4);
 }
 .span3 {
-  width: 220px;
+  .theWidth(3);
 }
 .span2 {
-  width: 140px;
+  .theWidth(2);
 }
 .span1 {
-  width: 60px;
+  .theWidth(1);
 }
 .offset12 {
-  margin-left: 980px;
+  .theWidth(12);
 }
 .offset11 {
-  margin-left: 900px;
+  .theWidth(11);
 }
 .offset10 {
-  margin-left: 820px;
+  .theWidth(10);
 }
 .offset9 {
-  margin-left: 740px;
+  .theWidth(9);
 }
 .offset8 {
-  margin-left: 660px;
+  .theWidth(8);
 }
 .offset7 {
-  margin-left: 580px;
+  .theWidth(7);
 }
 .offset6 {
-  margin-left: 500px;
+  .theWidth(6);
 }
 .offset5 {
-  margin-left: 420px;
+  .theWidth(5);
 }
 .offset4 {
-  margin-left: 340px;
+  .theWidth(4);
 }
 .offset3 {
-  margin-left: 260px;
+  .theWidth(3);
 }
 .offset2 {
-  margin-left: 180px;
+  .theWidth(2);
 }
 .offset1 {
-  margin-left: 100px;
+  .theWidth(1);
 }
 .row-fluid {
   width: 100%;
@@ -555,7 +596,7 @@ VERSION: 1.0
 }
 @media (min-width: 768px) and (max-width: 979px) {
   .row {
-    margin-left: -20px;
+    // margin-left: -20px;
     *zoom: 1;
   }
   .row:before,
@@ -570,49 +611,49 @@ VERSION: 1.0
   [class*="span"] {
     float: left;
     min-height: 1px;
-    margin-left: 20px;
+    margin-left: @gridGutterWidth768;
   }
   .container,
   .navbar-static-top .container,
   .navbar-fixed-top .container,
   .navbar-fixed-bottom .container {
-    width: 724px;
+    width: @gridRowWidth768;
   }
   .span12 {
-    width: 724px;
+    .theWidth768(12);
   }
   .span11 {
-    width: 662px;
+    .theWidth768(11);
   }
   .span10 {
-    width: 600px;
+    .theWidth768(10);
   }
   .span9 {
-    width: 538px;
+    .theWidth768(9);
   }
   .span8 {
-    width: 476px;
+    .theWidth768(8);
   }
   .span7 {
-    width: 414px;
+    .theWidth768(7);
   }
   .span6 {
-    width: 352px;
+    .theWidth768(6);
   }
   .span5 {
-    width: 290px;
+    .theWidth768(5);
   }
   .span4 {
-    width: 228px;
+    .theWidth768(4);
   }
   .span3 {
-    width: 166px;
+    .theWidth768(3);
   }
   .span2 {
-    width: 104px;
+    .theWidth768(2);
   }
   .span1 {
-    width: 42px;
+    .theWidth768(1);
   }
   .offset12 {
     margin-left: 764px;
@@ -871,7 +912,7 @@ VERSION: 1.0
 }
 @media (min-width: 1200px) {
   .row {
-    margin-left: -30px;
+    margin-left: -@gridGutterWidth;
     *zoom: 1;
   }
   .row:before,
@@ -886,49 +927,49 @@ VERSION: 1.0
   [class*="span"] {
     float: left;
     min-height: 1px;
-    margin-left: 30px;
+    margin-left: @gridGutterWidth;
   }
   .container,
   .navbar-static-top .container,
   .navbar-fixed-top .container,
   .navbar-fixed-bottom .container {
-    width: 1170px;
+    width: @containerWidth;
   }
   .span12 {
-    width: 1170px;
+    .theWidth1200(12);
   }
   .span11 {
-    width: 1070px;
+    .theWidth1200(11);
   }
   .span10 {
-    width: 970px;
+    .theWidth1200(10);
   }
   .span9 {
-    width: 870px;
+    .theWidth1200(9);
   }
   .span8 {
-    width: 770px;
+    .theWidth1200(8);
   }
   .span7 {
-    width: 670px;
+    .theWidth1200(7);
   }
   .span6 {
-    width: 570px;
+    .theWidth1200(6);
   }
   .span5 {
-    width: 470px;
+    .theWidth1200(5);
   }
   .span4 {
-    width: 370px;
+    .theWidth1200(4);
   }
   .span3 {
-    width: 270px;
+    .theWidth1200(3);
   }
   .span2 {
-    width: 170px;
+    .theWidth1200(2);
   }
   .span1 {
-    width: 70px;
+    .theWidth1200(1);
   }
   .offset12 {
     margin-left: 1230px;
