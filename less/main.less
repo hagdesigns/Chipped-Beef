@@ -41,9 +41,8 @@ If you don't want to use a certain feature, just comment it out. Hooray for ligh
 
 @import "normalize"; //Probably shouldn't remove this one.
 @import "helper";
-@import "grid";
 @import "type";
-
+@import "grid";
 
 /*
 YOUR STYLES GO RIGHT HURR -- BELOW THIS LINE
@@ -53,4 +52,22 @@ YOUR STYLES GO RIGHT HURR -- BELOW THIS LINE
 body {
 	background: @backgroundColor;
 	color: @primaryTextColor;
+}
+
+a {
+	color: @secondaryColor;
+	text-decoration: none;
+}
+
+a:hover {
+	color: darken(@secondaryColor, 10%);
+}
+
+@media (max-width: 480px) {
+	[class*="span"] {
+		margin-bottom: @lineHeight;
+	}
+	[class*="span"]:last-child {
+		margin-bottom: 0px;
+	}
 }
