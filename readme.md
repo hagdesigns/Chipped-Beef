@@ -1,6 +1,6 @@
 # About Chipped Beef
 
-This framework is nowhere near done! I'm adding to it as I go, and is not anywhere near a usable state.
+This framework is nowhere near done! I'm adding to it as I go, and is not anywhere near a usable state. Also, be aware that I built this for use in my own projects, so some things that I think are perfect for my workflow might be crazy to you.
 
 ## Latest Revisions
 
