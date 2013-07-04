@@ -1,27 +1,26 @@
-/*
- _     _                _____             _                  
-| |   | |              (____ \           (_)                 
-| |__ | | ____  ____    _   \ \ ____  ___ _  ____ ____   ___ 
-|  __)| |/ _  |/ _  |  | |   | / _  )/___) |/ _  |  _ \ /___)
-| |   | ( ( | ( ( | |  | |__/ ( (/ /|___ | ( ( | | | | |___ | 
-|_|   |_|\_||_|\_|| |  |_____/ \____|___/|_|\_|| |_| |_(___/ 
-              (_____|                      (_____|
+//  _     _                _____             _                  
+// | |   | |              (____ \           (_)                 
+// | |__ | | ____  ____    _   \ \ ____  ___ _  ____ ____   ___ 
+// |  __)| |/ _  |/ _  |  | |   | / _  )/___) |/ _  |  _ \ /___)
+// | |   | ( ( | ( ( | |  | |__/ ( (/ /|___ | ( ( | | | | |___ | 
+// |_|   |_|\_||_|\_|| |  |_____/ \____|___/|_|\_|| |_| |_(___/ 
+//               (_____|                      (_____|
 
-============
-MODULAR GRID (From Bootstrap 2)
-============
-VERSION: 1.1
-============
+// ============
+// MODULAR GRID (From Bootstrap 2)
+// ============
+// VERSION: 1.1
+// ============
 
-* Bootstrap v2.2.2
-*
-* Copyright 2012 Twitter, Inc
-* Licensed under the Apache License v2.0
-* http://www.apache.org/licenses/LICENSE-2.0
-*
-* Designed and built with all the love in the world @twitter by @mdo and @fat.
+// * Bootstrap v2.2.2
+// *
+// * Copyright 2012 Twitter, Inc
+// * Licensed under the Apache License v2.0
+// * http://www.apache.org/licenses/LICENSE-2.0
+// *
+// * Designed and built with all the love in the world @twitter by @mdo and @fat.
 
-*/
+/* Grid system */
 
 //FLUID GRID CONFIGURATION
 //=========
@@ -34,8 +33,8 @@ VERSION: 1.1
 //=========
 
 //Set container width for largest grid size
-@gridRowWidth:        960px; //Determine size of row
-@gridContainerWidth:  960px; //Useful if you are placing the grid inside of a box with padding
+@gridRowWidth:        1140px; //Determine size of row
+@gridContainerWidth:  1140px; //Useful if you are placing the grid inside of a box with padding
 @gridGutterWidth:     20px;
 @gridColumns:         12;
 
@@ -46,21 +45,12 @@ VERSION: 1.1
 @gridColumnWidth: (@gridRowWidth - (@gridColumns * @gridGutterWidth))/@gridColumns;
 @containerWidth: @gridContainerWidth - @gridGutterWidth;
 
-// // 1200px min
-// @gridColumnWidth1200:     70px;
-// @gridGutterWidth1200:     20px;
-// @gridRowWidth1200:        (@gridColumns * @gridColumnWidth1200) + (@gridGutterWidth1200 * @gridColumns);
-
 // 768px-979px
-@gridColumnWidth768:      42px;
-@gridGutterWidth768:      20px;
+@gridColumnWidth768:      round(@gridColumnWidth*.70);
+@gridGutterWidth768:      @gridGutterWidth;
 @gridRowWidth768:         (@gridColumns * @gridColumnWidth768) + (@gridGutterWidth768 * @gridColumns);
 
 .theWidth (@theColumn: 1) {
-  width: (@gridColumnWidth * @theColumn) + (@gridGutterWidth * (@theColumn - 1));
-}
-
-.theWidth1200 (@theColumn: 1) {
   width: (@gridColumnWidth * @theColumn) + (@gridGutterWidth * (@theColumn - 1));
 }
 
@@ -937,40 +927,40 @@ VERSION: 1.1
     width: @containerWidth;
   }
   .span12 {
-    .theWidth1200(12);
+    .theWidth(12);
   }
   .span11 {
-    .theWidth1200(11);
+    .theWidth(11);
   }
   .span10 {
-    .theWidth1200(10);
+    .theWidth(10);
   }
   .span9 {
-    .theWidth1200(9);
+    .theWidth(9);
   }
   .span8 {
-    .theWidth1200(8);
+    .theWidth(8);
   }
   .span7 {
-    .theWidth1200(7);
+    .theWidth(7);
   }
   .span6 {
-    .theWidth1200(6);
+    .theWidth(6);
   }
   .span5 {
-    .theWidth1200(5);
+    .theWidth(5);
   }
   .span4 {
-    .theWidth1200(4);
+    .theWidth(4);
   }
   .span3 {
-    .theWidth1200(3);
+    .theWidth(3);
   }
   .span2 {
-    .theWidth1200(2);
+    .theWidth(2);
   }
   .span1 {
-    .theWidth1200(1);
+    .theWidth(1);
   }
   .offset12 {
     margin-left: 1230px;

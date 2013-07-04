@@ -1,34 +1,12 @@
 /*
- _     _                _____             _                  
-| |   | |              (____ \           (_)                 
-| |__ | | ____  ____    _   \ \ ____  ___ _  ____ ____   ___ 
-|  __)| |/ _  |/ _  |  | |   | / _  )/___) |/ _  |  _ \ /___)
-| |   | ( ( | ( ( | |  | |__/ ( (/ /|___ | ( ( | | | | |___ | 
-|_|   |_|\_||_|\_|| |  |_____/ \____|___/|_|\_|| |_| |_(___/ 
-              (_____|                      (_____|
-
-=============
-MAIN CSS FILE
-=============
-VERSION: 1.0
-============
-
-Part of an effort to create a modular, lightweight CSS framework.
-
-Title:
+Title: Chipped Beef
 Website CSS Version: 1.0
 Website URL:
-
 */
 /*
-LESS VARIABLES (Others can be found inside of other modules)
-=========
- */
-/*
-SELECTED MODULES
-================
-
-If you don't want to use a certain feature, just comment it out. Hooray for lightweight stylesheets!
+Title: Chipped Beef
+Website CSS Version: 1.0
+Website URL:
 */
 /*! normalize.css v2.0.1 | MIT License | git.io/normalize */
 /* ==========================================================================
@@ -90,6 +68,8 @@ html {
   /* 1 */
 
   -webkit-text-size-adjust: 100%;
+  /* 2 */
+
   -ms-text-size-adjust: 100%;
   /* 2 */
 
@@ -364,26 +344,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/*
- _     _                _____             _                  
-| |   | |              (____ \           (_)                 
-| |__ | | ____  ____    _   \ \ ____  ___ _  ____ ____   ___ 
-|  __)| |/ _  |/ _  |  | |   | / _  )/___) |/ _  |  _ \ /___)
-| |   | ( ( | ( ( | |  | |__/ ( (/ /|___ | ( ( | | | | |___ | 
-|_|   |_|\_||_|\_|| |  |_____/ \____|___/|_|\_|| |_| |_(___/ 
-              (_____|                      (_____|
-
-======================
-MODULAR HELPER CLASSES (Based on the Bootstrap helpers)
-======================
-VERSION: 1.0
-============
-
-Part of an effort to create a modular, lightweight CSS framework.
-
-These helper classes are designed to aid in creating small design tweaks.
-
-*/
+/* Helper Classes */
 .clearfix {
   *zoom: 1;
 }
@@ -411,7 +372,7 @@ These helper classes are designed to aid in creating small design tweaks.
 .show-grid [class*="span"] {
   background: #eee;
   border-radius: 5px;
-  padding: 10px 30px;
+  padding: 10px 20px;
 }
 .show-grid:hover [class*="span"] {
   background: #d5d5d5;
@@ -425,19 +386,58 @@ These helper classes are designed to aid in creating small design tweaks.
 |_|   |_|\_||_|\_|| |  |_____/ \____|___/|_|\_|| |_| |_(___/ 
               (_____|                      (_____|
 
-============
-MODULAR TYPE
-============
+===============
+MODULAR BUTTONS
+===============
 VERSION: 1.0
 ============
 
 Part of an effort to create a modular, lightweight CSS framework.
 
-Type in the Chipped Beef framework is built to maintain a vertical rhythm. 
-Of course, it's very hard to maintain that rhythm in complex websites, but the
-default type settings should keep standard type in rhythm.
+This file contains an assortment of buttons to get you started.
 
 */
+.button {
+  background: #f44040;
+  border: solid #c30b0b;
+  border-radius: 3px;
+  border-width: 1px 1px 4px 1px;
+  box-shadow: inset 0px 1px 0px #f77070;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 2.5rem;
+  padding: 1.25rem;
+  text-shadow: 0px -1px 0px #c30b0b;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: .2s linear background;
+  -moz-transition: .2s linear background;
+  -o-transition: .2s linear background;
+  -ms-transition: .2s linear background;
+  transition: .2s linear background;
+}
+.button:hover {
+  background: #f32828;
+  -webkit-transition: .2s linear background;
+  -moz-transition: .2s linear background;
+  -o-transition: .2s linear background;
+  -ms-transition: .2s linear background;
+  transition: .2s linear background;
+}
+.button:active {
+  margin-top: 1px;
+  border-bottom-width: 3px;
+}
+.button.secondary {
+  background: #ececec;
+  border: solid #b9b9b9;
+  border-width: 1px 1px 4px 1px;
+  box-shadow: inset 0px 1px 0px #ffffff;
+  color: #000000;
+  text-shadow: 0px -1px 0px #ffffff;
+}
+/* Base Typography */
 html {
   font-size: 62.5%;
 }
@@ -492,30 +492,7 @@ KEEPING IT RESPONSIVE, YO
     font-size: 45%;
   }
 }
-/*
- _     _                _____             _                  
-| |   | |              (____ \           (_)                 
-| |__ | | ____  ____    _   \ \ ____  ___ _  ____ ____   ___ 
-|  __)| |/ _  |/ _  |  | |   | / _  )/___) |/ _  |  _ \ /___)
-| |   | ( ( | ( ( | |  | |__/ ( (/ /|___ | ( ( | | | | |___ | 
-|_|   |_|\_||_|\_|| |  |_____/ \____|___/|_|\_|| |_| |_(___/ 
-              (_____|                      (_____|
-
-============
-MODULAR GRID (From Bootstrap 2)
-============
-VERSION: 1.1
-============
-
-* Bootstrap v2.2.2
-*
-* Copyright 2012 Twitter, Inc
-* Licensed under the Apache License v2.0
-* http://www.apache.org/licenses/LICENSE-2.0
-*
-* Designed and built with all the love in the world @twitter by @mdo and @fat.
-
-*/
+/* Grid system */
 .clearfix {
   *zoom: 1;
 }
@@ -565,79 +542,79 @@ VERSION: 1.1
 .navbar-static-top .container,
 .navbar-fixed-top .container,
 .navbar-fixed-bottom .container {
-  width: 940px;
+  width: 1120px;
 }
 .span12 {
-  width: 940px;
+  width: 1120px;
 }
 .span11 {
-  width: 860px;
+  width: 1025px;
 }
 .span10 {
-  width: 780px;
+  width: 930px;
 }
 .span9 {
-  width: 700px;
+  width: 835px;
 }
 .span8 {
-  width: 620px;
+  width: 740px;
 }
 .span7 {
-  width: 540px;
+  width: 645px;
 }
 .span6 {
-  width: 460px;
+  width: 550px;
 }
 .span5 {
-  width: 380px;
+  width: 455px;
 }
 .span4 {
-  width: 300px;
+  width: 360px;
 }
 .span3 {
-  width: 220px;
+  width: 265px;
 }
 .span2 {
-  width: 140px;
+  width: 170px;
 }
 .span1 {
-  width: 60px;
+  width: 75px;
 }
 .offset12 {
-  width: 940px;
+  width: 1120px;
 }
 .offset11 {
-  width: 860px;
+  width: 1025px;
 }
 .offset10 {
-  width: 780px;
+  width: 930px;
 }
 .offset9 {
-  width: 700px;
+  width: 835px;
 }
 .offset8 {
-  width: 620px;
+  width: 740px;
 }
 .offset7 {
-  width: 540px;
+  width: 645px;
 }
 .offset6 {
-  width: 460px;
+  width: 550px;
 }
 .offset5 {
-  width: 380px;
+  width: 455px;
 }
 .offset4 {
-  width: 300px;
+  width: 360px;
 }
 .offset3 {
-  width: 220px;
+  width: 265px;
 }
 .offset2 {
-  width: 140px;
+  width: 170px;
 }
 .offset1 {
-  width: 60px;
+  width: 75px;
 }
 .row-fluid {
   width: 100%;
@@ -1064,43 +1041,43 @@ VERSION: 1.1
   .navbar-static-top .container,
   .navbar-fixed-top .container,
   .navbar-fixed-bottom .container {
-    width: 744px;
+    width: 876px;
   }
   .span12 {
-    width: 724px;
+    width: 856px;
   }
   .span11 {
-    width: 662px;
+    width: 783px;
   }
   .span10 {
-    width: 600px;
+    width: 710px;
   }
   .span9 {
-    width: 538px;
+    width: 637px;
   }
   .span8 {
-    width: 476px;
+    width: 564px;
   }
   .span7 {
-    width: 414px;
+    width: 491px;
   }
   .span6 {
-    width: 352px;
+    width: 418px;
   }
   .span5 {
-    width: 290px;
+    width: 345px;
   }
   .span4 {
-    width: 228px;
+    width: 272px;
   }
   .span3 {
-    width: 166px;
+    width: 199px;
   }
   .span2 {
-    width: 104px;
+    width: 126px;
   }
   .span1 {
-    width: 42px;
+    width: 53px;
   }
   .offset12 {
     margin-left: 764px;
@@ -1404,43 +1381,43 @@ VERSION: 1.1
   .navbar-static-top .container,
   .navbar-fixed-top .container,
   .navbar-fixed-bottom .container {
-    width: 940px;
+    width: 1120px;
   }
   .span12 {
-    width: 940px;
+    width: 1120px;
   }
   .span11 {
-    width: 860px;
+    width: 1025px;
   }
   .span10 {
-    width: 780px;
+    width: 930px;
   }
   .span9 {
-    width: 700px;
+    width: 835px;
   }
   .span8 {
-    width: 620px;
+    width: 740px;
   }
   .span7 {
-    width: 540px;
+    width: 645px;
   }
   .span6 {
-    width: 460px;
+    width: 550px;
   }
   .span5 {
-    width: 380px;
+    width: 455px;
   }
   .span4 {
-    width: 300px;
+    width: 360px;
   }
   .span3 {
-    width: 220px;
+    width: 265px;
   }
   .span2 {
-    width: 140px;
+    width: 170px;
   }
   .span1 {
-    width: 60px;
+    width: 75px;
   }
   .offset12 {
     margin-left: 1230px;
@@ -1730,26 +1707,14 @@ VERSION: 1.1
     margin-left: 0;
   }
 }
-/*
-YOUR STYLES GO RIGHT HURR -- BELOW THIS LINE
-=========================
-*/
 body {
   background: #ffffff;
   color: #000000;
 }
 a {
-  color: #666666;
+  color: #f44040;
   text-decoration: none;
 }
 a:hover {
-  color: #4d4d4d;
-}
-@media (max-width: 480px) {
-  [class*="span"] {
-    margin-bottom: 2.5rem;
-  }
-  [class*="span"]:last-child {
-    margin-bottom: 0px;
-  }
+  color: #f11010;
 }
