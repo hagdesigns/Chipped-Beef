@@ -1,0 +1,66 @@
+/*
+ _     _                _____             _                  
+| |   | |              (____ \           (_)                 
+| |__ | | ____  ____    _   \ \ ____  ___ _  ____ ____   ___ 
+|  __)| |/ _  |/ _  |  | |   | / _  )/___) |/ _  |  _ \ /___)
+| |   | ( ( | ( ( | |  | |__/ ( (/ /|___ | ( ( | | | | |___ | 
+|_|   |_|\_||_|\_|| |  |_____/ \____|___/|_|\_|| |_| |_(___/ 
+              (_____|                      (_____|
+
+===============
+MODULAR BUTTONS
+===============
+VERSION: 1.0
+============
+
+Part of an effort to create a modular, lightweight CSS framework.
+
+This file contains an assortment of buttons to get you started.
+
+*/
+
+.button {
+    background: @secondaryColor;
+    border: solid darken(@secondaryColor, 20%);
+    border-radius: 3px;
+    border-width: 1px 1px 4px 1px;
+    box-shadow: inset 0px 1px 0px lighten(@secondaryColor, 10%);
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: @lineHeight;
+    padding: @lineHeight/2;
+    text-shadow: 0px -1px 0px darken(@secondaryColor, 20%);
+    text-align: center;
+    text-decoration: none;
+
+    -webkit-transition: .2s linear background;
+    -moz-transition: .2s linear background;
+    -o-transition: .2s linear background;
+    -ms-transition: .2s linear background;
+    transition: .2s linear background;
+}
+
+    .button:hover {
+        background: darken(@secondaryColor, 5%);
+
+        -webkit-transition: .2s linear background;
+        -moz-transition: .2s linear background;
+        -o-transition: .2s linear background;
+        -ms-transition: .2s linear background;
+        transition: .2s linear background;
+    }
+
+    .button:active {
+        margin-top: 1px;
+        border-bottom-width: 3px;
+    }
+
+.button.secondary {
+    background: @subtle;
+    border: solid darken(@subtle, 20%);
+    border-width: 1px 1px 4px 1px;
+    box-shadow: inset 0px 1px 0px lighten(@subtle, 10%);
+    color: @primaryTextColor;
+    text-shadow: 0px -1px 0px #fff;
+}
