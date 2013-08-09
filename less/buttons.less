@@ -19,20 +19,19 @@ This file contains an assortment of buttons to get you started.
 
 */
 
-.button {
+.button, button {
     background: @secondaryColor;
     border: solid darken(@secondaryColor, 20%);
     border-radius: 3px;
-    border-width: 1px 1px 4px 1px;
-    box-shadow: inset 0px 1px 0px lighten(@secondaryColor, 10%);
+    border-width: 0 0 4px 0;
     color: #fff;
     cursor: pointer;
     display: inline-block;
     margin-bottom: @lineHeight;
-    padding: @lineHeight/2;
-    text-shadow: 0px -1px 0px darken(@secondaryColor, 20%);
+    padding: @lineHeight/2 @lineHeight;
     text-align: center;
     text-decoration: none;
+    white-space: nowrap;
 
     -webkit-transition: .2s linear background;
     -moz-transition: .2s linear background;
@@ -41,7 +40,8 @@ This file contains an assortment of buttons to get you started.
     transition: .2s linear background;
 }
 
-    .button:hover {
+    .button:hover, 
+    button:hover {
         background: darken(@secondaryColor, 5%);
 
         -webkit-transition: .2s linear background;
@@ -51,16 +51,23 @@ This file contains an assortment of buttons to get you started.
         transition: .2s linear background;
     }
 
-    .button:active {
+    .button:active, 
+    button:active {
         margin-top: 1px;
         border-bottom-width: 3px;
     }
 
 .button.secondary {
-    background: @subtle;
+    background: darken(@subtle, 10%);
     border: solid darken(@subtle, 20%);
-    border-width: 1px 1px 4px 1px;
-    box-shadow: inset 0px 1px 0px lighten(@subtle, 10%);
-    color: @primaryTextColor;
-    text-shadow: 0px -1px 0px #fff;
+    border-width: 0 0 4px 0;
+    color: #fff;
+}
+
+    .button.secondary:hover {
+        background: darken(@subtle, 15%);
+    }
+
+.button.full-width {
+    display: block;
 }

@@ -56,3 +56,13 @@
 .show-grid:hover [class*="span"] {
     background: darken(#eee, 10%);
 }
+
+@media (max-width: 480px) {
+    .show-grid [class*="span"] {
+        margin-bottom: @lineHeight;
+    }
+
+    .show-grid [class*="span"]:last-child {
+        margin-bottom: 0;
+    }
+}

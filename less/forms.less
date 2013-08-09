@@ -1,0 +1,55 @@
+/*
+ _     _                _____             _                  
+| |   | |              (____ \           (_)                 
+| |__ | | ____  ____    _   \ \ ____  ___ _  ____ ____   ___ 
+|  __)| |/ _  |/ _  |  | |   | / _  )/___) |/ _  |  _ \ /___)
+| |   | ( ( | ( ( | |  | |__/ ( (/ /|___ | ( ( | | | | |___ | 
+|_|   |_|\_||_|\_|| |  |_____/ \____|___/|_|\_|| |_| |_(___/ 
+              (_____|                      (_____|
+
+=============
+MODULAR FORMS
+=============
+VERSION: 1.0
+============
+
+Part of an effort to create a modular, lightweight CSS framework.
+
+This file contains an assortment of default form styling to get you started.
+
+*/
+
+form {
+
+}
+
+input,
+textarea,
+select {
+    box-sizing: border-box;
+    margin-bottom: @lineHeight;
+    padding: @lineHeight/2;
+    width: 100%;
+}
+
+input,
+textarea {
+    border: solid @subtle;
+    border-width: 3px;
+    border-radius: 5px;
+    -webkit-transition: border .2s linear;
+    -moz-transition: border .2s linear;
+    -o-transition: border .2s linear;
+    -ms-transition: border .2s linear;
+    transition: border .2s linear;
+}
+
+input:focus,
+textarea:focus {
+    border: solid @secondaryColor;
+    -webkit-transition: border .2s linear;
+    -moz-transition: border .2s linear;
+    -o-transition: border .2s linear;
+    -ms-transition: border .2s linear;
+    transition: border .2s linear;
+}

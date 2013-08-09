@@ -46,7 +46,7 @@
 @containerWidth: @gridContainerWidth - @gridGutterWidth;
 
 // 768px-979px
-@gridColumnWidth768:      round(@gridColumnWidth*.70);
+@gridColumnWidth768:      round(@gridColumnWidth*.55);
 @gridGutterWidth768:      @gridGutterWidth;
 @gridRowWidth768:         (@gridColumns * @gridColumnWidth768) + (@gridGutterWidth768 * @gridColumns);
 
@@ -865,40 +865,40 @@
     margin-left: 20px;
   }
   input.span12, textarea.span12, .uneditable-input.span12 {
-    width: 710px;
+    .theWidth768(12);
   }
   input.span11, textarea.span11, .uneditable-input.span11 {
-    width: 648px;
+    .theWidth768(11);
   }
   input.span10, textarea.span10, .uneditable-input.span10 {
-    width: 586px;
+    .theWidth768(10);
   }
   input.span9, textarea.span9, .uneditable-input.span9 {
-    width: 524px;
+    .theWidth768(9);
   }
   input.span8, textarea.span8, .uneditable-input.span8 {
-    width: 462px;
+    .theWidth768(8);
   }
   input.span7, textarea.span7, .uneditable-input.span7 {
-    width: 400px;
+    .theWidth768(7);
   }
   input.span6, textarea.span6, .uneditable-input.span6 {
-    width: 338px;
+    .theWidth768(6);
   }
   input.span5, textarea.span5, .uneditable-input.span5 {
-    width: 276px;
+    .theWidth768(5);
   }
   input.span4, textarea.span4, .uneditable-input.span4 {
-    width: 214px;
+    .theWidth768(4);
   }
   input.span3, textarea.span3, .uneditable-input.span3 {
-    width: 152px;
+    .theWidth768(3);
   }
   input.span2, textarea.span2, .uneditable-input.span2 {
-    width: 90px;
+    .theWidth768(2);
   }
   input.span1, textarea.span1, .uneditable-input.span1 {
-    width: 28px;
+    .theWidth768(1);
   }
 }
 @media (min-width: 1200px) {
@@ -1181,40 +1181,40 @@
     margin-left: 30px;
   }
   input.span12, textarea.span12, .uneditable-input.span12 {
-    width: 1156px;
+    .theWidth(12);
   }
   input.span11, textarea.span11, .uneditable-input.span11 {
-    width: 1056px;
+    .theWidth(11);
   }
   input.span10, textarea.span10, .uneditable-input.span10 {
-    width: 956px;
+    .theWidth(10);
   }
   input.span9, textarea.span9, .uneditable-input.span9 {
-    width: 856px;
+    .theWidth(9);
   }
   input.span8, textarea.span8, .uneditable-input.span8 {
-    width: 756px;
+    .theWidth(8);
   }
   input.span7, textarea.span7, .uneditable-input.span7 {
-    width: 656px;
+    .theWidth(7);
   }
   input.span6, textarea.span6, .uneditable-input.span6 {
-    width: 556px;
+    .theWidth(6);
   }
   input.span5, textarea.span5, .uneditable-input.span5 {
-    width: 456px;
+    .theWidth(5);
   }
   input.span4, textarea.span4, .uneditable-input.span4 {
-    width: 356px;
+    .theWidth(4);
   }
   input.span3, textarea.span3, .uneditable-input.span3 {
-    width: 256px;
+    .theWidth(3);
   }
   input.span2, textarea.span2, .uneditable-input.span2 {
-    width: 156px;
+    .theWidth(2);
   }
   input.span1, textarea.span1, .uneditable-input.span1 {
-    width: 56px;
+    .theWidth(1);
   }
   .thumbnails {
     margin-left: -30px;
