@@ -454,6 +454,14 @@ button:active {
 .button.secondary:hover {
   background: #c6c6c6;
 }
+.button.sucess {
+  background-color: #2ecc71;
+  border-color: #25a25a;
+}
+.button.success:hover {
+  background: #29b765;
+}
+/* Button helper classes */
 .button.full-width {
   display: block;
 }
@@ -504,6 +512,25 @@ textarea:focus {
   -o-transition: border .2s linear;
   -ms-transition: border .2s linear;
   transition: border .2s linear;
+}
+input.error {
+  border-color: #e74c3c;
+  color: #e74c3c;
+}
+input.warning {
+  border-color: #f1c40f;
+  color: #f1c40f;
+}
+input.success {
+  border-color: #2ecc71;
+  color: #2ecc71;
+}
+input[disabled],
+input[readonly],
+textarea[disabled],
+textarea[readonly] {
+  background-color: #ececec;
+  cursor: default;
 }
 /* Base Typography */
 html {

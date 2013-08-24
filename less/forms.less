@@ -37,6 +37,7 @@ textarea {
     border: solid @subtle;
     border-width: 3px;
     border-radius: 5px;
+
     -webkit-transition: border .2s linear;
     -moz-transition: border .2s linear;
     -o-transition: border .2s linear;
@@ -47,9 +48,33 @@ textarea {
 input:focus,
 textarea:focus {
     border: solid @secondaryColor;
+
     -webkit-transition: border .2s linear;
     -moz-transition: border .2s linear;
     -o-transition: border .2s linear;
     -ms-transition: border .2s linear;
     transition: border .2s linear;
+}
+
+input.error {
+    border-color: @error;
+    color: @error;
+}
+
+input.warning {
+    border-color: @warning;
+    color: @warning;
+}
+
+input.success {
+    border-color: @success;
+    color: @success;
+}
+
+input[disabled], 
+input[readonly], 
+textarea[disabled], 
+textarea[readonly] {
+    background-color: @subtle;
+    cursor: default;
 }
