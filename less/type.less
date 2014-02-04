@@ -31,36 +31,34 @@ body {
     line-height: @lineHeight;
 }
 
+h1, h2, h3, h4, h5 {
+    margin-top: 0;
+    margin-bottom: @lineHeight;
+}
+
 h1 {
     font-family: @headerFontFamily;
     font-size: round(@baseFontSize*@ratio*@ratio*@ratio);
     line-height: @lineHeight*3;
-    margin-top: @lineHeight;
-    // margin-bottom: @lineHeight*3;
 }
 
 h2 {
     font-family: @headerFontFamily;
     font-size: round(@baseFontSize*@ratio*@ratio);
     line-height: @lineHeight*3;
-    margin-top: @lineHeight*3;
-    margin-bottom: @lineHeight;
 }
 
 h3 {
     font-family: @headerFontFamily;
     font-size: round(@baseFontSize*@ratio);
     line-height: @lineHeight*2;
-    margin-top: @lineHeight*2;
-    margin-bottom: @lineHeight;
 }
 
 h4 {
     font-family: @headerFontFamily;
     font-size: round(@baseFontSize);
     line-height: @lineHeight;
-    margin-top: @lineHeight;
-    margin-bottom: 0rem;
+    margin-bottom: 0.5rem;
 }
 
 p, ul {

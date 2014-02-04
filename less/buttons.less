@@ -2,7 +2,7 @@
 ===============
 MODULAR BUTTONS
 ===============
-VERSION: 1.0
+VERSION: 1.1
 ============
 
 Part of an effort to create a modular, lightweight CSS framework.
@@ -12,10 +12,9 @@ This file contains an assortment of buttons to get you started.
 */
 
 .button, button {
-    background: @secondaryColor;
-    border: solid darken(@secondaryColor, 20%);
+    background-color: @secondaryColor;
     border-radius: 3px;
-    border-width: 0 0 4px 0;
+    border: none;
     color: #fff;
     cursor: pointer;
     display: inline-block;
@@ -34,7 +33,7 @@ This file contains an assortment of buttons to get you started.
 
     .button:hover, 
     button:hover {
-        background: darken(@secondaryColor, 5%);
+        background-color: darken(@secondaryColor, 5%);
 
         -webkit-transition: .2s linear background;
         -moz-transition: .2s linear background;
@@ -43,30 +42,21 @@ This file contains an assortment of buttons to get you started.
         transition: .2s linear background;
     }
 
-    .button:active, 
-    button:active {
-        margin-top: 1px;
-        border-bottom-width: 3px;
-    }
-
 .button.secondary {
-    background: darken(@subtle, 10%);
-    border: solid darken(@subtle, 20%);
-    border-width: 0 0 4px 0;
+    background-color: darken(@subtle, 10%);
     color: #fff;
 }
 
     .button.secondary:hover {
-        background: darken(@subtle, 15%);
+        background-color: darken(@subtle, 15%);
     }
 
 .button.sucess {
     background-color: @success;
-    border-color: darken(@success, 10%);
 }
 
     .button.success:hover {
-        background: darken(@success, 5%);
+        background-color: darken(@success, 5%);
     }
 
 /* Button helper classes */

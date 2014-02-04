@@ -1,10 +1,10 @@
 /*
-Title: Chipped Beef
+Website Title: Chipped Beef
 Website CSS Version: 1.0
 Website URL:
 */
 /*
-Title: Chipped Beef
+Website Title: Chipped Beef
 Website CSS Version: 1.0
 Website URL:
 */
@@ -369,23 +369,31 @@ table {
 .align-center {
   text-align: center;
 }
+.img-responsive {
+  height: auto;
+  max-width: 100%;
+}
+.hidden {
+  display: none;
+  visibility: none;
+}
 .show-grid {
   margin-top: 10px;
   margin-bottom: 20px;
 }
-.show-grid [class*="span"] {
+.show-grid [class*="col-"] {
   background: #eee;
   border-radius: 5px;
   padding: 10px 20px;
 }
-.show-grid:hover [class*="span"] {
+.show-grid:hover [class*="col-"] {
   background: #d5d5d5;
 }
 @media (max-width: 480px) {
-  .show-grid [class*="span"] {
+  .show-grid [class*="col-"] {
     margin-bottom: 2.5rem;
   }
-  .show-grid [class*="span"]:last-child {
+  .show-grid [class*="col-"]:last-child {
     margin-bottom: 0;
   }
 }
@@ -393,7 +401,7 @@ table {
 ===============
 MODULAR BUTTONS
 ===============
-VERSION: 1.0
+VERSION: 1.1
 ============
 
 Part of an effort to create a modular, lightweight CSS framework.
@@ -403,10 +411,9 @@ This file contains an assortment of buttons to get you started.
 */
 .button,
 button {
-  background: #f44040;
-  border: solid #c30b0b;
+  background-color: #f44040;
   border-radius: 3px;
-  border-width: 0 0 4px 0;
+  border: none;
   color: #fff;
   cursor: pointer;
   display: inline-block;
@@ -423,33 +430,25 @@ button {
 }
 .button:hover,
 button:hover {
-  background: #f32828;
+  background-color: #f32828;
   -webkit-transition: .2s linear background;
   -moz-transition: .2s linear background;
   -o-transition: .2s linear background;
   -ms-transition: .2s linear background;
   transition: .2s linear background;
 }
-.button:active,
-button:active {
-  margin-top: 1px;
-  border-bottom-width: 3px;
-}
 .button.secondary {
-  background: #d3d3d3;
-  border: solid #b9b9b9;
-  border-width: 0 0 4px 0;
+  background-color: #d3d3d3;
   color: #fff;
 }
 .button.secondary:hover {
-  background: #c6c6c6;
+  background-color: #c6c6c6;
 }
 .button.sucess {
   background-color: #2ecc71;
-  border-color: #25a25a;
 }
 .button.success:hover {
-  background: #29b765;
+  background-color: #29b765;
 }
 /* Button helper classes */
 .button.full-width {
@@ -459,7 +458,7 @@ button:active {
 =============
 MODULAR FORMS
 =============
-VERSION: 1.0
+VERSION: 1.1
 ============
 
 Part of an effort to create a modular, lightweight CSS framework.
@@ -523,32 +522,34 @@ body {
   font-size: 1.8rem;
   line-height: 2.5rem;
 }
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin-top: 0;
+  margin-bottom: 2.5rem;
+}
 h1 {
   font-family: "Helvetica Neue", sans-serif;
   font-size: 8rem;
   line-height: 7.5rem;
-  margin-top: 2.5rem;
 }
 h2 {
   font-family: "Helvetica Neue", sans-serif;
   font-size: 5rem;
   line-height: 7.5rem;
-  margin-top: 7.5rem;
-  margin-bottom: 2.5rem;
 }
 h3 {
   font-family: "Helvetica Neue", sans-serif;
   font-size: 3rem;
   line-height: 5rem;
-  margin-top: 5rem;
-  margin-bottom: 2.5rem;
 }
 h4 {
   font-family: "Helvetica Neue", sans-serif;
   font-size: 2rem;
   line-height: 2.5rem;
-  margin-top: 2.5rem;
-  margin-bottom: 0rem;
+  margin-bottom: 0.5rem;
 }
 p,
 ul {

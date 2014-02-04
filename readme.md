@@ -1,8 +1,14 @@
 # About Chipped Beef
 
-This framework is nowhere near done! I'm adding to it as I go, and is not anywhere near a usable state. Also, be aware that I built this for use in my own projects, so some things that I think are perfect for my workflow might be crazy to you.
+This is a little project I began working on to build a design framework so I can rapidly prototype new websites. Not very many new ideas to be found her, and much is borrowed from Bootstrap, but it's setup exactly how I like it. Also, be aware that I built this for use in my own projects, so some things that I think are perfect for my workflow might be crazy to you.
 
 ## Latest Revisions
+
+As of February 3rd, 2014
+- Switched to Bootstrap v3 Grid
+- Added some new helper classes
+- Modified the typography margins
+- Again, more polish!
 
 As of August 9th, 2013
 - Still working to get the grid module the way I want it. Made some more changes in order to make it as flexible as possible. Inputs should now fit columns correctly.
