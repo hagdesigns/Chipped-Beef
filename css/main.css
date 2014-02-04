@@ -411,7 +411,7 @@ This file contains an assortment of buttons to get you started.
 */
 .button,
 button {
-  background-color: #f44040;
+  background-color: #5fc59b;
   border-radius: 3px;
   border: none;
   color: #fff;
@@ -430,7 +430,7 @@ button {
 }
 .button:hover,
 button:hover {
-  background-color: #f32828;
+  background-color: #4cbe8f;
   -webkit-transition: .2s linear background;
   -moz-transition: .2s linear background;
   -o-transition: .2s linear background;
@@ -452,7 +452,7 @@ button:hover {
 }
 .button.white {
   background: #fff;
-  color: #f44040;
+  color: #5fc59b;
 }
 .button.white:hover {
   background: #e6e6e6;
@@ -494,7 +494,7 @@ textarea {
 }
 input:focus,
 textarea:focus {
-  border: solid #f44040;
+  border: solid #5fc59b;
   -webkit-transition: border .2s linear;
   -moz-transition: border .2s linear;
   -o-transition: border .2s linear;
@@ -1316,9 +1316,9 @@ body {
   color: #333333;
 }
 a {
-  color: #f44040;
+  color: #5fc59b;
   text-decoration: none;
 }
 a:hover {
-  color: #f11010;
+  color: #40b182;
 }
