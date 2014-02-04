@@ -450,6 +450,13 @@ button:hover {
 .button.success:hover {
   background-color: #29b765;
 }
+.button.white {
+  background: #fff;
+  color: #f44040;
+}
+.button.white:hover {
+  background: #e6e6e6;
+}
 /* Button helper classes */
 .button.full-width {
   display: block;
@@ -520,6 +527,7 @@ html {
 body {
   font-family: "Helvetica Neue", sans-serif;
   font-size: 1.8rem;
+  font-weight: 300;
   line-height: 2.5rem;
 }
 h1,
@@ -538,11 +546,13 @@ h1 {
 h2 {
   font-family: "Helvetica Neue", sans-serif;
   font-size: 5rem;
+  font-weight: 300;
   line-height: 7.5rem;
 }
 h3 {
   font-family: "Helvetica Neue", sans-serif;
   font-size: 3rem;
+  font-weight: 300;
   line-height: 5rem;
 }
 h4 {
