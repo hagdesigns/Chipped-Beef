@@ -1,20 +1,16 @@
-// =============
-// MAIN CSS FILE
-// =============
-// VERSION: 1.2
-// ============
-
-// Part of an effort to create a modular, lightweight CSS framework.
-
 /*
-Website Title: Chipped Beef
-Website CSS Version: 1.0
-Website URL:
+=============
+MAIN CSS FILE
+=============
+VERSION: 1.3
+============
+Title: Chipped Beef
+CSS Version: 1.0
+URL:
 */
 
-
 // LESS VARIABLES (Others can be found inside of other modules)
-// =========
+// ==============
 
 @backgroundColor: 	#ffffff;
 @primaryTextColor: 	#333333;
@@ -27,23 +23,20 @@ Website URL:
 @warning: 			#F1C40F;
 @info:				#3498DB;
 
-
 // SELECTED MODULES
 // ================
 // If you don't want to use a certain feature, just comment it out. Hooray for lightweight stylesheets!
 
-
 @import "normalize"; //Probably shouldn't remove this one.
+@import "mixins";
 @import "helper";
 @import "buttons";
 @import "forms";
 @import "type";
 @import "grid";
 
-
 // YOUR STYLES GO RIGHT HURR -- BELOW THIS LINE
 // =========================
-
 
 body {
 	background: @backgroundColor;

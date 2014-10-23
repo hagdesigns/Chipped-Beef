@@ -4,6 +4,14 @@ This is a little project I began working on to build a design framework so I can
 
 ## Latest Revisions
 
+As of October 22nd, 2014
+- Implemented a boilerplate Gulp/Bower workflow.
+- Added a default Gulp config file.
+- Added a default Bower config file.
+- Cleaned up LESS files.
+- Added "Mixins" LESS file to store helpers like transitions, etc.
+- Moved some folders around.
+
 As of February 3rd, 2014
 - Switched to Bootstrap v3 Grid
 - Added some new helper classes
@@ -19,7 +27,3 @@ As of August 9th, 2013
 As of July 2nd, 2013
 - Rewrote much of the grid module. Now both the fluid AND fixed grids support LESS! Yay! It's now much easier to changed fixed grid sizes and adapt the grid to fit in padded containers.
 - Tidied up some things!
-
-## Usage
-
-There are two folders. One for the uncompiled LESS and another for final CSS. Edit the LESS files to customize the framework and change variables. While you can use the LESS files directly in the browser, best practices suggest that you first compile the LESS into vanilla CSS.

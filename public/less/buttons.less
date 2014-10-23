@@ -1,0 +1,62 @@
+/*
+===============
+MODULAR BUTTONS
+===============
+VERSION: 1.1
+============
+This file contains an assortment of buttons to get started.
+*/
+
+.button, button {
+    background-color: @secondaryColor;
+    border-radius: 3px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: @lineHeight;
+    padding: @lineHeight/2 @lineHeight;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    .transition(.2s ease-in-out background);
+
+    &:hover {
+        background-color: darken(@secondaryColor, 5%);
+        .transition(.2s ease-in-out background);
+    }
+
+    &.secondary {
+        background-color: darken(@subtle, 10%);
+        color: #fff;
+
+        &:hover {
+            background-color: darken(@subtle, 15%);
+        }
+    }
+
+
+    &.sucess {
+        background-color: @success;
+
+        &:hover {
+            background-color: darken(@success, 5%);
+        }
+    }
+
+
+    &.white {
+        background: #fff;
+        color: @secondaryColor;
+
+        &:hover {
+            background: darken(#fff, 10%);
+        }
+    }
+
+
+    /* Button helper classes */
+    &.full-width {
+        display: block;
+    }
+}
