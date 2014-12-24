@@ -1,6 +1,6 @@
 # About Chipped Beef
 
-This is a little project I began working on to build a design framework so I can rapidly prototype new websites. Not very many new ideas to be found her, and much is borrowed from Bootstrap, but it's setup exactly how I like it. Also, be aware that I built this for use in my own projects, so some things that I think are perfect for my workflow might be crazy to you.
+This is a little project I began working on to build a design framework so I can rapidly prototype new websites. Not very many new ideas to be found here, and much is borrowed from Bootstrap, but it's setup exactly how I like it. Also, be aware that I built this for use in my own projects, so some things that I think are perfect for my workflow might be crazy to you.
 
 ## Latest Revisions
 
